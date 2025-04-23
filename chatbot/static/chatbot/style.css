@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.chat-container {
+    width: 400px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+#chat-box {
+    height: 350px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.message {
+    margin: 10px 0;
+}
+
+.user {
+    text-align: right;
+    color: #0066cc;
+}
+
+.bot {
+    text-align: left;
+    color: #444;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004c99;
+}
+.message.bot h1,
+.message.bot h2,
+.message.bot h3 {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.message.bot br {
+    line-height: 1.5;
+}
+.chat-box {
+    height: 350px;
+    overflow-y: auto;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.chat-turn {
+    padding: 12px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+.chat-turn:hover .copy-btn {
+    display: block;
+}
+
+.user-question {
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bot-response {
+    color: #444;
+    margin-top: 6px;
+    white-space: pre-wrap;
+    line-height: 1.6;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #e6f0ff;
+    border: none;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #007bff;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.chat-turn:hover .copy-btn {
+    display: block;
+}
+
+.copy-btn:hover {
+    background-color: #d0e7ff;
+}
+
+
+.typing {
+    font-style: italic;
+    color: #999;
+}
+
+.suggestions {
+    margin: 10px 0;
+    display: flex;
+    gap: 8px;
+}
+
+.suggestions button {
+    background: #e6f0ff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #444;
+}
+.chat-controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.chat-controls button {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+    color: #444;
+}
+
+.chat-controls button:hover {
+    background-color: #e6e6e6;
+    
+}

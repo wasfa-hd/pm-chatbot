@@ -1,0 +1,37 @@
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PMBot - Your Project Manager Assistant</title>
+    <link rel="stylesheet" href="{% static 'chatbot/style.css' %}">
+</head>
+<body>
+    <div class="chat-container">
+        <h2>👔 Ask Your Project Manager</h2>
+
+        <div id="chat-box" class="chat-box"></div>
+        <div class="chat-controls">
+            <button onclick="clearChat()">🧹 Clear Chat</button>
+            <button onclick="exportChatToPDF()">📄 Export to PDF</button>
+        </div>
+        
+
+        <div class="suggestions">
+            <button onclick="quickSend('How can I write a resume for a software engineer?')">Resume Help</button>
+            <button onclick="quickSend('What does a project manager do?')">Role Info</button>
+            <button onclick="quickSend('What are top interview tips?')">Interview Tips</button>
+        </div>
+        
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type your job-related question..." autocomplete="off">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="{% static 'chatbot/chat.js' %}"></script>
+</body>
+</html>
